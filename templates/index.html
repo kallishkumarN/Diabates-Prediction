@@ -1,0 +1,124 @@
+<html>
+
+<head>
+<title>Diabetes Prediction App</title>
+
+<link rel="icon" 
+     type="image/png" 
+     href="https://careskillsacademy.co.uk/wp-content/uploads/2019/05/Diabetes-Awareness-Careskills-Academy.png">
+<style>
+html
+{
+height: 100%;
+width: 100%;
+}
+nav
+{
+background-color: pink;
+}
+p
+{
+margin-left: 450px;
+}
+h2
+{
+margin-top: 70px;
+margin-left: 580px;
+color: Blue;
+}
+h3
+{
+
+margin-left: 480px;
+}
+body
+{
+bgcolor: red;
+background-image: url('https://www.wallpapertip.com/wmimgs/0-3735_pink-background-wallpaper-hd-light-background-color.jpg');
+}
+input
+{
+width: 280px;
+}
+label
+{
+font-size: 20px;
+margin-left: 450px;
+}
+#preg
+{
+height: 30px;
+margin-left: 10px;
+margin-top: 10px;
+}
+#gluc
+{
+height: 30px;
+margin-left: 26px;
+}
+#bp
+{
+height: 30px;
+margin-left: 68px;
+}
+#skin
+{
+height: 30px;
+margin-left: 20px;
+}
+#ins
+{
+height: 30px;
+margin-left: 35px;
+}
+#bmi
+{
+height: 30px;
+margin-left: 52px;
+}
+#dpf
+{
+height: 30px;
+margin-left: 52px;
+}
+#age
+{
+height: 30px;
+margin-left: 105px;
+}
+#predict
+{
+margin-top:10px;
+margin-left: 534px;
+height: 35px;
+background-color: yellow;
+border-radius: 10px;
+cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<form action="{{ url_for('y_predict')}}"  method = "POST">
+<h2>Diabetes Predictor</h2>
+<label>Pregnancy Level:</label> <input type = "text" name = "preg" placeholder = "Enter your Pregnancy Level..." id = "preg" required><br><br>
+<label>Glucose Level:</label> <input type = "text" name = "gluc" placeholder = "Enter your Glucose Level..." id = "gluc" required><br><br>
+<label>BP Level:</label> <input type = "text" name = "bp" placeholder = "Enter your BP Level..." id = "bp" required><br><br>
+<label>Skin Thickness:</label> <input type = "text" name = "skin" placeholder = "Enter your Skin Thickness..." id = "skin" required><br><br>
+<label>Insulin Level:</label> <input type = "text" name = "ins" placeholder = "Enter your Insulin Level..." id = "ins" required><br><br>
+<label>BMI Level:</label> <input type = "text" name = "bmi" placeholder = "Enter your BMI Level..." id = "bmi" required><br><br>
+<label>DPF Level:</label> <input type = "text" name = "dpf" placeholder = "Enter your Diabetes Predective Function..." id = "dpf" required><br><br>
+<label>Age:</label> <input type = "text" name = "age" placeholder = "Enter your Age..." id = "age" required><br><br>
+<Input type = "submit" value = "PREDICT DIABETES" id = "predict"><br><br>
+</form>
+
+<h3>{{ prediction_text }}</h3>
+<nav>
+<p><br>
+<b>Note: </b>Please provide the inputs as whole number instead of decimal values<br><br>
+</p>
+</nav>
+</body>
+
+</html>
