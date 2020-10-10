@@ -1,0 +1,88 @@
+html
+{
+height: 100%;
+width: 100%;
+}
+nav
+{
+background-color: pink;
+}
+p
+{
+margin-left: 450px;
+}
+h2
+{
+margin-top: 70px;
+margin-left: 580px;
+color: Blue;
+}
+h3
+{
+
+margin-left: 480px;
+}
+body
+{
+bgcolor: red;
+background-image: url('https://www.wallpapertip.com/wmimgs/0-3735_pink-background-wallpaper-hd-light-background-color.jpg');
+}
+input
+{
+width: 280px;
+}
+label
+{
+font-size: 20px;
+margin-left: 450px;
+}
+#preg
+{
+height: 30px;
+margin-left: 10px;
+margin-top: 10px;
+}
+#gluc
+{
+height: 30px;
+margin-left: 26px;
+}
+#bp
+{
+height: 30px;
+margin-left: 68px;
+}
+#skin
+{
+height: 30px;
+margin-left: 20px;
+}
+#ins
+{
+height: 30px;
+margin-left: 35px;
+}
+#bmi
+{
+height: 30px;
+margin-left: 52px;
+}
+#dpf
+{
+height: 30px;
+margin-left: 52px;
+}
+#age
+{
+height: 30px;
+margin-left: 105px;
+}
+#predict
+{
+margin-top:10px;
+margin-left: 534px;
+height: 35px;
+background-color: yellow;
+border-radius: 10px;
+cursor: pointer;
+}
